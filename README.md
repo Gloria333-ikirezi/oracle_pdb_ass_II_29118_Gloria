@@ -6,7 +6,7 @@ This project focused on administering an Oracle Multitenant environment using Or
 The main tasks included:
 
 - Creating a Pluggable Database (PDB) named GL_PDB_29118  
-- Creating and managing a PDB for deletion named gl_to_delete_pdb_28945  
+- Creating and managing a PDB for deletion named gl_to_delete_pdb_29118 
 - Creating and managing database users  
 - Configuring and accessing Oracle Enterprise Manager (OEM Express)  
 - Assigning HTTPS port 5068 for OEM access   
@@ -138,7 +138,7 @@ This retrieved the assigned port in previous command/query.
 1. Invalid container (CDB$ROOT) during login  
    → Used SHOW CON_NAME to verify current container and switched using ALTER SESSION SET CONTAINER.
 
-2. ORA-00942: view or table does not exist  
+2. 'View or table does not exist' error:
    → Ensured connection as SYSDBA before querying dynamic views such as v$pdbs.
 
 3. OEM login popup repeatedly appearing  
